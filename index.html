@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer Count Down</title>
+  </head>
+  <body>
+    <div class="timer">
+      <svg height="400" width="400" class="timer__block" id="svg">
+        <circle
+          class="timer__circle"
+          r="180"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke="green"
+          stroke-width="15"
+          style="transform: rotate(-90deg); transform-origin: center"
+        />
+      </svg>
+      <div class="timer__text-box">
+        <input type="number" id="duration" value="30" class="timer__input" />
+        <div class="buttons">
+          <button id="start" class="timer__button">
+            <i class="fa-sharp fa-solid fa-play"></i>
+          </button>
+          <button id="pause" class="timer__button">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="Timer.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
